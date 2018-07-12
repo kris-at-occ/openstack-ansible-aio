@@ -9,7 +9,7 @@ git checkout 17.0.6
 
 echo "run-osa-aio.sh: Please review and update bootstrap-host role defaults"
 echo "run-osa-aio.sh: Hit <Enter> to launch 'vim tests/roles/bootstrap-host/defaults/main.yml'"; read ANSWER
-vim tests/roles/bootstrap-host/defaults/main.html
+vim tests/roles/bootstrap-host/defaults/main.yml
 
 echo "run-osa-aio.sh: Running scripts/bootstrap-ansible.sh"
 scripts/bootstrap-ansible.sh
