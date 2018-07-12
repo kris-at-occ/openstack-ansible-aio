@@ -53,7 +53,7 @@ cd /opt/openstack-ansible/playbooks
 for playbook in setup-hosts.yml setup-infrastructure.yml setup-openstack.yml
 do
   echo "run-osa-aio.sh: Running openstack-ansible $playbook"
-  openstack-ansible playbook
+  openstack-ansible $playbook
   if [ $? -ne 0 ]; then
     echo "run-osa-aio.sh: openstack-ansible $playbook failed! Exiting..."
     exit $?
