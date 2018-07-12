@@ -19,6 +19,12 @@ if [ $? -ne 0 ]; then
   exit $?
 fi
 
+printf "run-osa-aio.sh: Do you want to remove Designate from the Scenario? [y/n]: "; read ANSWER
+if [ $ANSWER = 'y' ]
+then
+  mv /etc/openstack_deploy/conf.d/designate.yml /etc/openstack_deploy/conf.d/designate.yml.old.$(date '+%s')
+fi
+
 echo "run-osa-aio.sh: Running scripts/bootstrap-aio.sh with 'aio_lxc' scenario"
 export SCENARIO='aio_lxc'
 scripts/bootstrap-aio.sh
