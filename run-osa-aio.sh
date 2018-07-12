@@ -8,6 +8,7 @@ echo "run-osa-aio.sh: Checking out Queens (17.0.6)"
 git checkout 17.0.6
 
 echo "run-osa-aio.sh: Please review and update bootstrap-host role defaults"
+echo "run0osa-aio.sh: Consider changing 'bootstrap_host_loopback_cinder' to 'no', if cinder_volumes VG is already created"
 echo "run-osa-aio.sh: Hit <Enter> to launch 'vim tests/roles/bootstrap-host/defaults/main.yml'"; read ANSWER
 vim tests/roles/bootstrap-host/defaults/main.yml
 
