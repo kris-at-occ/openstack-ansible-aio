@@ -1,0 +1,5 @@
+glance_glance-api_conf_overrides:
+  glance_store:
+    default_store: file
+    stores: file, http
+    filesystem_store_datadir: /var/lib/glance/images/
