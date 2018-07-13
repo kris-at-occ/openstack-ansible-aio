@@ -1,0 +1,3 @@
+nova_nova_conf_overrides:
+  spice:
+    html5proxy_base_url: http://EXTERNAL_IP_ADDRESS:6082/spice_auto.html
