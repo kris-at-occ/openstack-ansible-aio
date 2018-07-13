@@ -67,4 +67,4 @@ do
   fi
 done
 
-echo "run-osa-aio.sh" OpenStack is deployed :)"
+echo "run-osa-aio.sh: OpenStack is deployed :)"
