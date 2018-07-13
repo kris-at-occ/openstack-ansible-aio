@@ -3,3 +3,5 @@ glance_glance_api_conf_overrides:
     default_store: file
     stores: file, http
     filesystem_store_datadir: /var/lib/glance/images/
+
+neutron_dnsmasq_dns_servers: "8.8.8.8"
