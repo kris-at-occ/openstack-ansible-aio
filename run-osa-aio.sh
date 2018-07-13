@@ -45,7 +45,7 @@ then
   for f in $(ls -1 /etc/openstack_deploy/conf.d/*.aio); do mv -v ${f} ${f%.*}; done
 fi
 
-for config_file in /etc/openstack_deploy/user_variables.yml /etc/openstack_deploy/openstack_user_config.yml /etc/openstack_deploy/user_secrets.yml
+for config_file in /etc/network/intefaces.d/osa_interfaces.cfg /etc/openstack_deploy/user_variables.yml /etc/openstack_deploy/openstack_user_config.yml /etc/openstack_deploy/user_secrets.yml
 do
   echo "run-osa-aio.sh: Please review $config_file"
   config_file_old=$config_file.old.$(date '+%s')
